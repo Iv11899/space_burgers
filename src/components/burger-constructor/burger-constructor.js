@@ -1,14 +1,14 @@
 import { useState } from "react";
-import BurgerConstructorStyles from "./burgerConstructor.module.css";
+import BurgerConstructorStyles from "./burger-constructor.module.css";
 import {
   CurrencyIcon,
   Button,
 } from "@ya.praktikum/react-developer-burger-ui-components";
 import PropTypes from "prop-types";
-import BunElements from "../bunElements/bunElements";
-import StuffElements from "../stuffElements/stuffElements";
+import BunElements from "../bun-elements/bun-elements";
+import StuffElements from "../stuff-elements/stuff-elements";
 import Modal from "../modal/modal";
-import OrderDetails from "../orderDetails/orderDetails";
+import OrderDetails from "../order-details/order-details";
 
 export default function BurgerConstructor({ ingredients }) {
   const [isVisible, setVisability] = useState(false);

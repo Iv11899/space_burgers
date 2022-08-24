@@ -1,4 +1,4 @@
-import IngredientCardStyles from "./ingredientCard.module.css";
+import IngredientCardStyles from "./ingredient-card.module.css";
 import {
   Counter,
   CurrencyIcon,

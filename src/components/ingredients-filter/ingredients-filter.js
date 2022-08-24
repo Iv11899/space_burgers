@@ -1,4 +1,4 @@
-import IngredientCard from "../ingredientCard/ingredientCard";
+import IngredientCard from "../ingredient-card/ingredient-card";
 import PropTypes from "prop-types";
 
 export default function IngredientsFilter({ ingredients, type, openModal }) {

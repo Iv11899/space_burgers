@@ -1,6 +1,6 @@
 import { ConstructorElement } from "@ya.praktikum/react-developer-burger-ui-components";
 import PropTypes from "prop-types";
-import BunElementsStyles from "./bunElements.module.css";
+import BunElementsStyles from "./bun-elements.module.css";
 
 export default function BunElements({ children }) {
   return (

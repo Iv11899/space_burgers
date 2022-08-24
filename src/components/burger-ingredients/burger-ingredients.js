@@ -1,10 +1,10 @@
 import { useState } from "react";
-import BurgerIngredientsStyles from "./burgerIngredients.module.css";
+import BurgerIngredientsStyles from "./burger-ingredients.module.css";
 import PropTypes from "prop-types";
 import Tabs from "../tabs/tabs";
 import Modal from "../modal/modal";
-import IngredientDetails from "../ingredientDetails/ingredientDetails";
-import IngredientsFilter from "../ingredientsFilter/ingredientsFilter";
+import IngredientDetails from "../ingredient-details/ingredient-details";
+import IngredientsFilter from "../ingredients-filter/ingredients-filter";
 
 export default function BurgerIngredients({ ingredients }) {
   const [isVisible, setVisability] = useState(false);
