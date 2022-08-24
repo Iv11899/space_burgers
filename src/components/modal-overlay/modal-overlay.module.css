@@ -1,0 +1,22 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mainOpened {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,19 @@
+.title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.imgContainer {
+  text-align: center;
+}
+
+.nutrValTable {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 20px 8px;
+}
+
+.nutrValCell {
+  width: 120px;
+}
