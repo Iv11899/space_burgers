@@ -1,8 +1,12 @@
 import detailsStyles from "./ingredient-details.module.css";
-import PropTypes from "prop-types";
-import { ingredientType } from "../../utils/types";
+import { useSelector } from "react-redux";
 
-export default function IngredientDetails({ ingredient }) {
+export default function IngredientDetails() {
+  
+  const currentModalIngredient = useSelector(
+    (state) => state.modalReducer.currentModalIngredient
+  );
+
   return (
     <div className={detailsStyles.main}>
       <h2 className={`${detailsStyles.title} text text_type_main-large`}>
@@ -11,13 +15,13 @@ export default function IngredientDetails({ ingredient }) {
       <figure className={detailsStyles.imgContainer}>
         <img
           className={detailsStyles.img}
-          src={ingredient.image_large}
-          alt={ingredient.name}
+          src={currentModalIngredient.image_large}
+          alt={currentModalIngredient.name}
         />
         <figcaption
           className={`${detailsStyles.caption} text text_type_main-medium`}
         >
-          {ingredient.name}
+          {currentModalIngredient.name}
         </figcaption>
       </figure>
 
@@ -34,17 +38,13 @@ export default function IngredientDetails({ ingredient }) {
         </thead>
         <tbody>
           <tr>
-            <td>{ingredient.calories}</td>
-            <td>{ingredient.proteins}</td>
-            <td>{ingredient.fat}</td>
-            <td>{ingredient.carbohydrates}</td>
+            <td>{currentModalIngredient.calories}</td>
+            <td>{currentModalIngredient.proteins}</td>
+            <td>{currentModalIngredient.fat}</td>
+            <td>{currentModalIngredient.carbohydrates}</td>
           </tr>
         </tbody>
       </table>
     </div>
   );
 }
-
-IngredientDetails.propTypes = {
-  ingredient: PropTypes.shape(ingredientType),
-};

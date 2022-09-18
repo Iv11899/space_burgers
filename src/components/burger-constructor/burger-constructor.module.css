@@ -10,6 +10,8 @@
 .stuff {
   overflow-y: scroll;
   max-height: 37vh;
+  min-height: 37vh;
+  width: 580px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -39,4 +41,46 @@
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+.dragContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.topBun {
+  background: rgb(36, 35, 41);
+  border-radius: 88px 88px 40px 40px;
+  color: #fff;
+  padding: 16px 24px;
+    display: inline-block;
+  height: 48px;
+  max-width: 488px;
+  width: 100%;
+  min-height: 48px;
+}
+
+.bottomBun {
+  background: rgb(36, 35, 41);
+  border-radius: 40px 40px 88px 88px;
+  color: #fff;
+  padding: 16px 24px;
+    display: inline-block;
+  height: 48px;
+  max-width: 488px;
+  width: 100%;
+  min-height: 48px;
+}
+
+.choose {
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 120px;
+}
+
+.reorder {
+  padding: 0;
+  margin: 0;
 }
