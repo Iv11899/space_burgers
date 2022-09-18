@@ -1,0 +1,46 @@
+.main {
+  grid-area: ingredients;
+  max-width: 600px;
+  justify-self: flex-end;
+}
+
+.title {
+  padding-top: 40px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.ingredientSectionName {
+  padding-bottom: 24px;
+  padding-top: 40px;
+}
+
+.ingredientsContainer {
+  overflow-y: scroll;
+  max-height: 67vh;
+}
+
+.ingredientsContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ingredientsContainer::-webkit-scrollbar-track {
+  background: #2f2f37;
+}
+
+.ingredientsContainer::-webkit-scrollbar-thumb {
+  background: #8585ad;
+}
+
+.cardsContainer {
+  margin: 0;
+  padding: 0 8px 0 16px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.scroll {
+  
+}

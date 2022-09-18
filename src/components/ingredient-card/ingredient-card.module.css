@@ -1,0 +1,32 @@
+.card {
+  box-sizing: border-box;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  filter: drop-shadow(5px 10px 0px rgba(153, 50, 204, 0.416));
+}
+
+.image {
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.costContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

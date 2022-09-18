@@ -1,0 +1,46 @@
+.main {
+  width: 100%;
+  background: #1c1c1c;
+  grid-area: header;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+}
+
+.navbarItemContainer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.navbarItem {
+  padding: 16px 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.navbarItem:last-child {
+  justify-self: flex-end;
+}
+
+.navbarItem_type_logo {
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: #fff;
+  transition: color .3s ease-in;
+}
